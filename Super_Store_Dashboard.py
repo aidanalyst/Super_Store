@@ -15,7 +15,7 @@ if fl is not None:
     st.write(filename)
     df = pd.read_csv(fl, encoding="ISO-8859-1")
 else:
-    d_url = "https://raw.github.com/aidanalyst/Super_Store/blob/main/Superstore.csv"
+    d_url = "https://raw.githubusercontent.com/aidanalyst/Super_Store/refs/heads/main/Superstore.csv"
     df = pd.read_csv(d_url, encoding = "ISO-8859-1")
 
 col1, col2 = st.columns((2))
