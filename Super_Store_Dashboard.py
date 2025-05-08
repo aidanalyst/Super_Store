@@ -15,8 +15,8 @@ if fl is not None:
     st.write(filename)
     df = pd.read_csv(fl, encoding="ISO-8859-1")
 else:
-    os.chdir(r"C:\Users\AI NetMan\Documents\GitHub\Super_Store")
-    df = pd.read_csv("Superstore.csv", encoding = "ISO-8859-1")
+    d_url = "https://raw.github.com/aidanalyst/Super_Store/blob/main/Superstore.csv"
+    df = pd.read_csv(d_url, encoding = "ISO-8859-1")
 
 col1, col2 = st.columns((2))
 df["Order Date"] = pd.to_datetime(df["Order Date"])
